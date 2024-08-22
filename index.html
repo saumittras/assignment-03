@@ -18,7 +18,7 @@
         theme: {
           extend: {
             colors: {
-              primary_bg: "#E9E9E9",
+              primary_bg: "#f4f4f4",
               primary_button_bg: "rgb(171, 239, 95)",
               secondary_bg: "rgba(255, 255, 255, .1)",
               button_bg_2: "rgba(171, 239, 95, 0.5)",
@@ -50,10 +50,10 @@
   </head>
   <body>
     <!-- Header Section Started from here -->
-    <header class="w-full bg-gradient-to-t from-white to-secondary_bg">
+    <header class="w-full bg-gradient-to-b from-primary_bg to-white">
       <!-- NavBar part start from here -->
       <nav
-        class="w-11/12 mx-auto flex flex-row mt-9 md:mt-11 lg:mt-14 justify-between items-center"
+        class="w-11/12 mx-auto flex flex-row pt-9 md:pt-11 lg:pt-14 justify-between items-center"
       >
         <!-- NavBar Start Part start here -->
         <div>
@@ -83,16 +83,16 @@
         <!-- Tablate and Mobile Menu Start Here-->
         <div class="flex">
           <!-- Nav Bar End Part  Start Here-->
-          <div class="hidden md:flex justify-evenly items-center">
+          <div class="hidden md:flex gap-1 justify-evenly items-center">
             <button>
               <i
-                class="fa-solid fa-magnifying-glass text-black rounded-full p-3"
+                class="fa-solid fa-magnifying-glass text-black rounded-full bg-white p-3"
               ></i>
             </button>
 
             <button>
               <i
-                class="fa-solid fa-cart-shopping text-black rounded-full lg:ml-0 p-3"
+                class="fa-solid fa-cart-shopping text-black rounded-full bg-white lg:ml-0 p-3"
               ></i>
             </button>
 
@@ -109,7 +109,11 @@
 
           <!-- Mobile nav bar start here -->
           <div class="dropdown dropdown-end lg:hidden">
-            <div tabindex="0" role="button" class="btn m-1 rounded-full">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn m-1 rounded-full bg-white"
+            >
               <i class="fa-solid fa-bars"></i>
             </div>
             <ul
