@@ -22,7 +22,8 @@
               primary_button_bg: "rgb(171, 239, 95)",
               secondary_bg: "rgba(255, 255, 255, .1)",
               button_bg_2: "rgba(171, 239, 95, 0.5)",
-              body: "#da373d",
+              dec_color: "rgb(73, 73, 73)",
+              card_dec_color: "rgb(115, 115, 115)",
               accent: "#da373d",
               body_neutral: "#da373d",
             },
@@ -59,11 +60,11 @@
         <div>
           <a
             class="font-bold text-3xl flex justify-center items-center flex-row"
-          >
-            <i
-              class="fa-solid fa-arrow-right text-center flex justify-center items-center flex-row -rotate-45 w-9 h-9 rounded-full bg-primary_button_bg"
-            ></i>
-            Rinterio</a
+            ><span class="font-light"
+              ><i
+                class="fa-solid fa-arrow-right text-center flex justify-center items-center flex-row -rotate-45 w-9 h-9 rounded-full bg-primary_button_bg"
+              ></i></span
+            >Rinterio</a
           >
         </div>
         <!-- NavBar Start Part end here -->
@@ -71,7 +72,7 @@
         <!-- Large Device Menu Bar start here -->
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a class="font-bold">Home</a></li>
+            <li><a href="#about-us" class="font-bold">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
             <li><a>Blogs</a></li>
@@ -140,7 +141,9 @@
       <!-- NavBar part end from here -->
 
       <!-- Banner Section start from here -->
-      <section class="flex flex-col items-center space-y-3 lg:space-y-6">
+      <section
+        class="flex flex-col items-center lg:mt-16 lg:mb-28 space-y-3 lg:space-y-6"
+      >
         <!-- Banner Image Section start from here -->
         <div>
           <img src="images/banner.png" alt="" />
@@ -153,7 +156,7 @@
             A barn house of this design has a <br />
             striking appearance
           </h1>
-          <p class="text-gray-600 font-medium w-8/12 text-center">
+          <p class="text-dec_color font-medium lg:w-8/12 text-center">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents, and
             large windows that flood the space with natural light.
@@ -174,7 +177,79 @@
     <!-- Header Section Ended from here -->
 
     <!-- Main Section started from here -->
-    <main></main>
+    <main>
+      <!-- We Design Section Start from here -->
+      <section class="w-full bg-primary_bg" id="about-us">
+        <div
+          class="w-11/12 mx-auto flex items-end flex-col lg:flex-row lg:gap-9 py-10 lg:py-32"
+        >
+          <!-- Content box start from here -->
+          <div class="flex-1 space-y-6">
+            <button class="bg-white rounded-full px-4 py-2">
+              <i class="fa-solid fa-arrow-right"></i> About Us
+            </button>
+
+            <h2 class="text-4xl font-bold">
+              We design thoughtful, liveable spaces
+            </h2>
+
+            <p class="text-dec_color font-medium">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <!-- Card grid start from here -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 lg:grid-cols-1"
+            >
+              <!-- Card 1 -->
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    class="pl-3 lg:pl-6"
+                    src="images/commercial.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                  <p class="text-card_dec_color font-medium">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    class="pl-3 lg:pl-6"
+                    src="images/commercial.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                  <p class="text-card_dec_color font-medium">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Cards grid div end from here -->
+          </div>
+          <!-- Content box end from here -->
+
+          <!-- Image box start from here -->
+          <div class="flex-1 mt-5">
+            <img class="md:w-full mx-auto" src="images/Rectangle.png" alt="" />
+          </div>
+          <!-- Image box end from here -->
+        </div>
+      </section>
+      <!-- We Design Section end from here -->
+    </main>
     <!-- Main Section Ended from here -->
 
     <!-- Footer Section Started from Here -->
