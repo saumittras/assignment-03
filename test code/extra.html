@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind_CSS and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customized Utility Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_bg: "#f4f4f4",
+              primary_button_bg: "rgb(171, 239, 95)",
+              secondary_bg: "rgba(255, 255, 255, .1)",
+              button_bg_2: "rgba(171, 239, 95, 0.5)",
+              dec_color: "rgb(73, 73, 73)",
+              card_dec_color: "rgb(115, 115, 115)",
+              title_color: "rgb(33, 33, 33)",
+              accent: "#da373d",
+              body_neutral: "#da373d",
+            },
+            fontFamily: {
+              Poppins: "Poppins",
+            },
+            backgroundImage: {
+              leaf1: "url('images/leaf01.png')",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/499b0bc6e9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Internal CSS added here -->
+    <style></style>
+
+    <title>Assignment-03</title>
+  </head>
+  <body class="w-8/12 mx-auto">
+    <section>
+      <!-- Slider style start from here -->
+      <div class="carousel w-full h-[400px]">
+        <div id="item1" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+            class="w-full"
+          />
+        </div>
+        <div id="item2" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+            class="w-full"
+          />
+        </div>
+        <div id="item3" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            class="w-full"
+          />
+        </div>
+        <div id="item4" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            class="w-full"
+          />
+        </div>
+      </div>
+      <div class="flex w-full justify-center gap-2 py-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+        <a href="#item4" class="btn btn-xs">4</a>
+      </div>
+      <!-- Slider style end from here -->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind_CSS and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customized Utility Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_bg: "#f4f4f4",
+              primary_button_bg: "rgb(171, 239, 95)",
+              secondary_bg: "rgba(255, 255, 255, .1)",
+              button_bg_2: "rgba(171, 239, 95, 0.5)",
+              dec_color: "rgb(73, 73, 73)",
+              card_dec_color: "rgb(115, 115, 115)",
+              title_color: "rgb(33, 33, 33)",
+              accent: "#da373d",
+              body_neutral: "#da373d",
+            },
+            fontFamily: {
+              Poppins: "Poppins",
+              cursive_review: "Cedarville Cursive",
+            },
+            backgroundImage: {
+              leaf1: "url('images/leaf01.png')",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/499b0bc6e9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font CDN added here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Internal CSS added here -->
+    <style></style>
+
+    <title>Assignment-03</title>
+  </head>
+  <body class="w-full">
+    <section>
+      <!-- Slider style start from here -->
+      <div class="carousel lg:h-[550px] w-full">
+        <!-- Slide 1 style start from Here -->
+        <div
+          id="slide1"
+          class="carousel-item relative bg-bike-primary-bg w-full"
+        >
+          <!-- Image box start from here -->
+
+          <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+            <!-- Slider Image Content -->
+            <div
+              class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+            >
+              <img
+                class="w-full p-4"
+                src="images/img5.png"
+                class="md:w-[440px]"
+              />
+            </div>
+
+            <!-- Slider Text content -->
+            <div
+              class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+            >
+              <q class="font-cursive_review text-xl lg:text-2xl">
+                Rinterio blew us away with their incredible work! From the first
+                consultation to the final touches, every step was handled with
+                unmatched professionalism and care. Our new home is a
+                masterpiece, and we’re beyond thrilled with the result. The team
+                went above and beyond to make sure everything was perfect. We
+                couldn’t recommend Rinterio more highly!</q
+              >
+              <h2 class="lg:text-3xl self-end">
+                —Jessica and Mark L.
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 1 style End from Here -->
+
+        <!-- Slide 2 style start from Here -->
+        <div
+          id="slide2"
+          class="carousel-item relative bg-bike-primary-bg w-full"
+        >
+          <!-- Image box start from here -->
+
+          <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+            <!-- Slider Image Content -->
+            <div
+              class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+            >
+              <img
+                class="w-full p-4"
+                src="images/img2.png"
+                class="md:w-[440px]"
+              />
+            </div>
+
+            <!-- Slider Text content -->
+            <div
+              class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+            >
+              <q class="font-cursive_review text-xl lg:text-2xl">
+                "We’re absolutely overjoyed with our new home from Rinterio! The
+                entire process was flawless, and the craftsmanship is out of
+                this world. The Rinterio team made our dream home a reality, and
+                their attention to detail was exceptional. Every day we’re in
+                awe of the quality and beauty of our new space. Thank you,
+                Rinterio, for making this an unforgettable experience!"</q
+              >
+              <h2 class="lg:text-3xl self-end">
+                <span class="text-3xl space-x-0">— Sophie and Alex M.
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 2 style End from Here -->
+
+        <!-- Slide 3 style start from Here -->
+        <div
+          id="slide3"
+          class="carousel-item relative bg-bike-primary-bg w-full"
+        >
+          <!-- Image box start from here -->
+
+          <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+            <!-- Slider Image Content -->
+            <div
+              class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+            >
+              <img
+                class="w-full p-4"
+                src="images/img3.png"
+                class="md:w-[440px]"
+              />
+            </div>
+
+            <!-- Slider Text content -->
+            <div
+              class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+            >
+              <q class="font-cursive_review text-xl lg:text-2xl">
+                Rinterio exceeded all our expectations! From the initial design to the final walk-through, their team was amazing—responsive, creative, and incredibly skilled. Our home is stunning, and we’re absolutely thrilled with how it turned out. The entire experience was smooth and enjoyable, thanks to Rinterio’s dedication and expertise. Highly recommend them to anyone looking for a top-notch builder!"</q
+              >
+              <h2 class="lg:text-3xl self-end">— Lisa and Jack W.
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 3 style End from Here -->
+
+        <!-- Slide 4 style start from Here -->
+        <div
+          id="slide4"
+          class="carousel-item relative bg-bike-primary-bg w-full"
+        >
+          <!-- Image box start from here -->
+
+          <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+            <!-- Slider Image Content -->
+            <div
+              class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+            >
+              <img
+                class="w-full p-4"
+                src="images/img4.png"
+                class="md:w-[440px]"
+              />
+            </div>
+
+            <!-- Slider Text content -->
+            <div
+              class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+            >
+              <q class="font-cursive_review text-xl lg:text-2xl">
+                "We’re ecstatic about our new home built by Rinterio! Their team turned our vision into a breathtaking reality with outstanding craftsmanship and attention to detail. Every aspect of the build was handled with care and precision. We’re so happy with the results and can’t thank Rinterio enough for making our dream home come to life. They truly are the best in the business!"</q
+              >
+              <h2 class="lg:text-3xl self-end">
+                — Natalie and Ryan B.
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 4 style End from Here -->
+      </div>
+      <!-- Slider style end from here -->
+    </section>
+  </body>
+</html>

@@ -12,6 +12,14 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Font CDN added here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind Customized Utility Classes -->
     <script>
       tailwind.config = {
@@ -29,7 +37,8 @@
               body_neutral: "#da373d",
             },
             fontFamily: {
-              Poppins: "Poppins",
+              primary_font: "Manrope",
+              cursive_review: "Cedarville Cursive",
             },
             backgroundImage: {
               leaf1: "url('images/leaf01.png')",
@@ -51,7 +60,7 @@
 
     <title>Assignment-03</title>
   </head>
-  <body class="w-full">
+  <body class="w-full font-primary_font">
     <!-- Header Section Started from here -->
     <header class="w-full bg-gradient-to-b from-primary_bg to-white">
       <!-- NavBar part start from here -->
@@ -258,8 +267,210 @@
       </section>
       <!-- We Design Section end from here -->
 
+      <!-- Extra Section start from here -->
+      <section class="w-full bg-white pt-8 md:pt-12 lg:pt-24" >
+        
+          <!-- Title section start from here -->
+          <div class=" flex flex-col justify-center items-center gap-6">
+            <button
+            class="btn btn-active bg-button_bg_2 w-60 font-bold rounded-full hover:bg-primary_button_bgg"
+          >
+            View More
+            <i
+              class="fa-solid fa-arrow-right text-center flex justify-center items-center flex-row -rotate-45 w-9 h-9 rounded-full bg-primary_button_bg font-semibold text-black"
+            ></i>
+          </button>
+
+          <h2 class="text-4xl font-bold text-center">
+            Our Happier Client Words
+          </h2>
+
+          
+          </div>
+        <!-- Title section end from here -->
+
+        <!-- Slider style start from here -->
+        <div class="carousel lg:h-[550px] w-full">
+          <!-- Slide 1 style start from Here -->
+          <div
+            id="slide1"
+            class="carousel-item relative bg-bike-primary-bg w-full"
+          >
+            <!-- Image box start from here -->
+
+            <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+              <!-- Slider Image Content -->
+              <div
+                class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+              >
+                <img
+                  class="w-full p-4"
+                  src="images/review1.png"
+                  class="md:w-[440px]"
+                />
+              </div>
+
+              <!-- Slider Text content -->
+              <div
+                class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+              >
+                <q class="font-cursive_review text-xl lg:text-2xl">
+                  Rinterio blew us away with their incredible work! From the first
+                  consultation to the final touches, every step was handled with
+                  unmatched professionalism and care. Our new home is a
+                  masterpiece, and we’re beyond thrilled with the result. The team
+                  went above and beyond to make sure everything was perfect. We
+                  couldn’t recommend Rinterio more highly!</q
+                >
+                <h2 class="text-2xl lg:text-3xl self-end">
+                  —Jessica and Mark L.
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide 1 style End from Here -->
+
+          <!-- Slide 2 style start from Here -->
+          <div
+            id="slide2"
+            class="carousel-item relative bg-bike-primary-bg w-full"
+          >
+            <!-- Image box start from here -->
+
+            <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+              <!-- Slider Image Content -->
+              <div
+                class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+              >
+                <img
+                  class="w-full p-4"
+                  src="images/review2.png"
+                  class="md:w-[440px]"
+                />
+              </div>
+
+              <!-- Slider Text content -->
+              <div
+                class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+              >
+                <q class="font-cursive_review text-xl lg:text-2xl">
+                  We’re absolutely overjoyed with our new home from Rinterio! The
+                  entire process was flawless, and the craftsmanship is out of
+                  this world. The Rinterio team made our dream home a reality, and
+                  their attention to detail was exceptional. Every day we’re in
+                  awe of the quality and beauty of our new space. Thank you,
+                  Rinterio, for making this an unforgettable experience!</q
+                >
+                <h2 class="lg:text-3xl self-end">
+                  <span class="text-2xl lg:text-3xl space-x-0">— Sophie and Alex M.
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide 2 style End from Here -->
+
+          <!-- Slide 3 style start from Here -->
+          <div
+            id="slide3"
+            class="carousel-item relative bg-bike-primary-bg w-full"
+          >
+            <!-- Image box start from here -->
+
+            <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+              <!-- Slider Image Content -->
+              <div
+                class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+              >
+                <img
+                  class="w-full p-4"
+                  src="images/review3.png"
+                  class="md:w-[440px]"
+                />
+              </div>
+
+              <!-- Slider Text content -->
+              <div
+                class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+              >
+                <q class="font-cursive_review text-xl lg:text-2xl">
+                  Rinterio exceeded all our expectations! From the initial design to the final walk-through, their team was amazing—responsive, creative, and incredibly skilled. Our home is stunning, and we’re absolutely thrilled with how it turned out. The entire experience was smooth and enjoyable, thanks to Rinterio’s dedication and expertise. Highly recommend them to anyone looking for a top-notch builder!"</q
+                >
+                <h2 class="text-2xl lg:text-3xl self-end">— Lisa and Jack W.
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide 3 style End from Here -->
+
+          <!-- Slide 4 style start from Here -->
+          <div
+            id="slide4"
+            class="carousel-item relative bg-bike-primary-bg w-full"
+          >
+            <!-- Image box start from here -->
+
+            <div class="flex flex-col md:flex-row lg:flex-row lg:p-24">
+              <!-- Slider Image Content -->
+              <div
+                class="flex-1 flex justify-center items-center lg:w-[406px] md:h-[344px]"
+              >
+                <img
+                  class="w-full p-4"
+                  src="images/img4.png"
+                  class="md:w-[440px]"
+                />
+              </div>
+
+              <!-- Slider Text content -->
+              <div
+                class="flex-1 m-7 lg:m-14 flex space-y-6 flex-col items-center justify-center"
+              >
+                <q class="font-cursive_review text-xl lg:text-2xl">
+                  We’re ecstatic about our new home built by Rinterio! Their team turned our vision into a breathtaking reality with outstanding craftsmanship and attention to detail. Every aspect of the build was handled with care and precision. We’re so happy with the results and can’t thank Rinterio enough for making our dream home come to life. They truly are the best in the business!</q
+                >
+                <h2 class=" text-2xl lg:text-3xl self-end">
+                  — Natalie and Ryan B.
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide 4 style End from Here -->
+        </div>
+        <!-- Slider style end from here -->
+        
+      </section>
+      <!-- Extra Section start from here -->
+
       <!-- Our Works process section start from here -->
-      <section class="bg-primary_bg py-24">
+      <section class="bg-primary_bg py-8 md:py-12 lg:py-24">
         <div class="w-11/12 mx-auto space-y-8">
           <!-- Content Box Start start from Here -->
           <div class="flex flex-col items-center space-y-6">
@@ -339,7 +550,7 @@
       <!-- Our Works process section end from here -->
 
       <!-- Our Latest prtfolio section start from here -->
-      <section class="my-24 w-11/12 lg:w-11/12 mx-auto">
+      <section class="my-8 md:my-12 lg:my-24 w-11/12 lg:w-11/12 mx-auto ">
         <!-- Content Section start from here -->
         <div
           class="flex flex-col items-center justify-center space-y-4 lg:space-y-6"
@@ -482,7 +693,7 @@
       <section
         class="w-full bg-input_bg h-auto bg-repeat-y lg:bg-repeat-y lg:bg-cover"
       >
-        <div class="w-11/12 lg:w-3/4 mx-auto space-y-5 pt-20 pb-10">
+        <div class="w-11/12 lg:w-3/4 mx-auto space-y-5 pt-8 md:pt-12 lg:pt-20 pb-10">
           <!-- Content Box start from here -->
           <div
             class="lg:w-2/4 mx-auto flex flex-col justify-center items-center space-y-5"
