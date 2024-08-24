@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind_CSS and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customized Utility Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_bg: "#f4f4f4",
+              primary_button_bg: "rgb(171, 239, 95)",
+              secondary_bg: "rgba(255, 255, 255, .1)",
+              button_bg_2: "rgba(171, 239, 95, 0.5)",
+              dec_color: "rgb(73, 73, 73)",
+              card_dec_color: "rgb(115, 115, 115)",
+              title_color: "rgb(33, 33, 33)",
+              accent: "#da373d",
+              body_neutral: "#da373d",
+            },
+            fontFamily: {
+              Poppins: "Poppins",
+            },
+            backgroundImage: {
+              leaf1: "url('images/leaf01.png')",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/499b0bc6e9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Internal CSS added here -->
+    <style></style>
+
+    <title>Assignment-03</title>
+  </head>
+  <body class="w-full">
+    <section class="my-24 w-11/12 lg:w-11/12 mx-auto">
+      <!-- Content Section start from here -->
+      <div
+        class="flex flex-col items-center justify-center space-y-4 lg:space-y-6"
+      >
+        <button class="bg-[#ABEF5F33] w-[246px] rounded-full px-4 py-2">
+          <i class="fa-solid fa-arrow-right"></i> Explore our Latest works
+        </button>
+        <h2 class="text-2xl md:text-3xl lg:text-[40px] text-center font-bold">
+          Our Latest Portfolio
+        </h2>
+        <p
+          class="text-sm md:text-base lg:text-base text-dec_color text-center lg:w-6/12"
+        >
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <!-- Content Section end from here -->
+
+      <!-- Portfolio Image section Start from here-->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-4 md:gap-5 lg:gap-6 mt-4 lg:mt-14"
+      >
+        <!-- card 1 Start from here -->
+        <div
+          class="flex flex-col md:flex-row lg:flex-row md:col-span-2 h-auto lg:col-span-5 shadow-xl border rounded-3xl"
+        >
+          <!-- Image section -->
+          <div class="w-full md:w-6/12 lg:w-6/12">
+            <img
+              class="h-full w-full p-5 md:p-5 lg:p-6 md:w-11/12 lg:w-11/12 lg:h-full"
+              src="images/img1.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Content section -->
+          <div
+            class="flex md:w-6/12 lg:w-6/12 flex-col gap-5 md:gap-5 lg:gap-6 m-5 mt-0 lg:ml-0 md:p-5 lg:p-6 md:pl-0 lg:pl-0"
+          >
+            <h2 class="text-2xl font-extrabold text-[#494949]">Commercial</h2>
+            <p class="text-base font-medium text-[#737373]">
+              The barn house captivates with its blend of rustic charm and
+              modern. The barn house captivates with its blend of rustic charm
+              and modern .
+            </p>
+            <a class="flex gap-2 text-xl font-bold"
+              ><span>View Details </span>
+              <i
+                class="fa-solid fa-arrow-right text-center flex justify-center items-center flex-row -rotate-45 w-8 h-8 rounded-full bg-primary_button_bg font-semibold text-black"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <!-- card 1 secrion end here-->
+
+        <!-- card 2 secrion start from  here-->
+        <div
+          class="lg:col-span-3 md:col-span-1 max-h-60 md:max-h-60 flex flex-1 justify-center items-center shadow-xl border rounded-3xl"
+        >
+          <img class="w-full h-full p-5 lg:p-6" src="images/img2.png" alt="" />
+        </div>
+        <!-- card 2 secrion end from here-->
+
+        <!-- card 3 section start from here -->
+        <div
+          class="flex md:flex-1 md:col-span-1 max-h-60 md:max-h-60 lg:col-span-2 justify-center items-center shadow-2xl border rounded-3xl"
+        >
+          <img class="w-full md:h-full p-5" src="images/img3.png" alt="" />
+        </div>
+        <!-- card 3 section end from here -->
+
+        <!-- card 4 section Start from here -->
+        <div
+          class="flex flex-col md:flex-row lg:gap-0 md:col-span-2 lg:col-span-4 md:max-h-60 md:w-full shadow-xl border rounded-3xl"
+        >
+          <!-- Image Section Start from Here -->
+          <div class="p-5 w-full md:w-6/12 lg:w-6/12">
+            <img class="h-full" src="images/img4.png" alt="" />
+          </div>
+
+          <!-- content section start from here -->
+          <div
+            class="flex w-full md:w-6/12 lg:md:w-6/12 flex-col gap-5 p-5 md:p-5 lg:p-4 md:pl-0 lg:pl-0"
+          >
+            <h2 class="text-2xl font-extrabold text-[#494949]">Commercial</h2>
+            <p class="text-base w-full font-medium text-[#737373]">
+              The barn house captivates with its blend of rustic charm and
+              modern. The barn house captivates with its blend of rustic charm
+              and modern .
+            </p>
+
+            <a class="flex gap-1 text-xl font-bold"
+              ><span>View Details </span>
+              <i
+                class="fa-solid fa-arrow-right text-center flex justify-center items-center flex-row -rotate-45 w-8 h-8 rounded-full bg-primary_button_bg font-semibold text-black"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <!-- card 4 section Start end here -->
+
+        <!-- card 5 section start from here -->
+        <div
+          class="flex md:flex-1 md:col-span-1 max-h-60 md:max-h-60 lg:col-span-2 justify-center items-center shadow-2xl border rounded-3xl"
+        >
+          <img class="w-full md:h-full p-5" src="images/img5.png" alt="" />
+        </div>
+        <!-- card 5 section end from here -->
+
+        <!-- card 6 secrion start from  here-->
+        <div
+          class="flex lg:hidden md:flex-1 md:col-span-1 max-h-60 md:max-h-60 lg:col-span-2 justify-center items-center shadow-2xl border rounded-3xl"
+        >
+          <img class="w-full md:h-full p-5" src="images/img3.png" alt="" />
+        </div>
+        <!-- card 6 secrion end from here-->
+      </div>
+      <!-- Portfolio Image section Start from here-->
+    </section>
+  </body>
+</html>
