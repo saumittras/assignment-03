@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind_CSS and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customized Utility Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_bg: "#f4f4f4",
+              primary_button_bg: "rgb(171, 239, 95)",
+              secondary_bg: "rgba(255, 255, 255, .1)",
+              button_bg_2: "rgba(171, 239, 95, 0.5)",
+              dec_color: "rgb(73, 73, 73)",
+              card_dec_color: "rgb(115, 115, 115)",
+              title_color: "rgb(33, 33, 33)",
+              accent: "#da373d",
+              body_neutral: "#da373d",
+            },
+            fontFamily: {
+              Poppins: "Poppins",
+            },
+            backgroundImage: {
+              bg_design: "url('images/Vector.png')",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/499b0bc6e9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Internal CSS added here -->
+    <style></style>
+
+    <title>Assignment-03</title>
+  </head>
+  <body class="w-full">
+    <!-- We Design Section Start from here -->
+    <section class="w-full bg-primary_bg relative" id="about-us">
+      <!-- background -->
+      <div class="h-10 mx-auto absolute top-6 left-5 hidden md:hidden lg:flex">
+        <img class="border-dashed border-2" src="images/Vector.png" alt="" />
+      </div>
+      <!-- background -->
+
+      <div
+        class="w-11/12 mx-auto flex items-end flex-col lg:flex-row lg:gap-9 py-10"
+      >
+        <!-- Content box start from here -->
+        <div class="flex-1 space-y-6">
+          <button class="bg-white rounded-full px-4 py-2">
+            <i class="fa-solid fa-arrow-right"></i> About Us
+          </button>
+
+          <h2 class="text-4xl font-bold">
+            We design thoughtful, liveable spaces
+          </h2>
+
+          <p class="text-dec_color font-medium">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <!-- Card grid start from here -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 lg:grid-cols-1"
+          >
+            <!-- Card 1 -->
+            <div class="card card-side bg-base-100 shadow-xl">
+              <figure class="mr-0">
+                <img
+                  class="pl-3 pr-0 lg:pl-6"
+                  src="images/commercial.png"
+                  alt=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                <p class="text-card_dec_color font-medium">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card card-side bg-base-100 shadow-xl">
+              <figure>
+                <img class="pl-3 lg:pl-6" src="images/commercial.png" alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                <p class="text-card_dec_color font-medium">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Cards grid div end from here -->
+        </div>
+        <!-- Content box end from here -->
+
+        <!-- Image box start from here -->
+        <div class="flex-1 mt-5 md:w-full md:object-cover">
+          <img
+            class="md:w-full md:h-full mx-auto"
+            src="images/Rectangle.png"
+            alt=""
+          />
+        </div>
+        <!-- Image box end from here -->
+      </div>
+    </section>
+    <!-- We Design Section end from here -->
+    <!-- We Design Section Start from here -->
+    <section class="w-full bg-primary_bg" id="about-us">
+      <div
+        class="w-11/12 mx-auto flex items-end flex-col lg:flex-row lg:gap-9 py-10 lg:py-32"
+      >
+        <!-- Content box start from here -->
+        <div class="flex-1 space-y-6">
+          <button class="bg-white rounded-full px-4 py-2">
+            <i class="fa-solid fa-arrow-right"></i> About Us
+          </button>
+
+          <h2 class="text-4xl font-bold">
+            We design thoughtful, liveable spaces
+          </h2>
+
+          <p class="text-dec_color font-medium">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <!-- Card grid start from here -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 lg:grid-cols-1"
+          >
+            <!-- Card 1 -->
+            <div class="card card-side bg-base-100 shadow-xl">
+              <figure class="mr-0">
+                <img
+                  class="pl-3 pr-0 lg:pl-6"
+                  src="images/commercial.png"
+                  alt=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                <p class="text-card_dec_color font-medium">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card card-side bg-base-100 shadow-xl">
+              <figure>
+                <img class="pl-3 lg:pl-6" src="images/commercial.png" alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-xl font-extrabold">Commercial</h2>
+                <p class="text-card_dec_color font-medium">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Cards grid div end from here -->
+        </div>
+        <!-- Content box end from here -->
+
+        <!-- Image box start from here -->
+        <div class="flex-1 mt-5 md:w-full md:object-cover">
+          <img
+            class="md:w-full md:h-full mx-auto"
+            src="images/Rectangle.png"
+            alt=""
+          />
+        </div>
+        <!-- Image box end from here -->
+      </div>
+    </section>
+    <!-- We Design Section end from here -->
+  </body>
+</html>
